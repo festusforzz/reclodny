@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)# -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ITE The blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./index_files/cerulean.css" rel="stylesheet">
+<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script><script>(function inject() {
+        var open = XMLHttpRequest.prototype.open;
+
+        XMLHttpRequest.prototype.open = function () {
+          this.requestMethod = arguments[0];
+          open.apply(this, arguments);
+        };
+
+        var send = XMLHttpRequest.prototype.send;
+
+        XMLHttpRequest.prototype.send = function () {
+          var onreadystatechange = this.onreadystatechange;
+
+          this.onreadystatechange = function () {
+            function GenerateQuickId() {
+              var randomStrId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+              return randomStrId.substring(0, 22);
+            }
+
+            try {
+              if (this.readyState === 4) {
+                var id = 'detector';
+                var mes = {
+                  posdMessageId: 'PANELOS_MESSAGE',
+                  posdHash: GenerateQuickId(),
+                  type: 'VIDEO_XHR_CANDIDATE',
+                  from: id,
+                  to: id.substring(0, id.length - 2),
+                  content: {
+                    requestMethod: this.requestMethod,
+                    url: this.responseURL,
+                    type: this.getResponseHeader('content-type'),
+                    content: this.response
+                  }
+                };
+                window.postMessage(mes, '*');
+              }
+            } catch (e) {}
+
+            if (onreadystatechange) {
+              return onreadystatechange.apply(this, arguments);
+            }
+          };
+
+          return send.apply(this, arguments);
+        };
+      })();</script></head>
+
+<body style="padding-top: 80px;" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjEuNy4yIiwic2NvcmUiOjEwNzAyfV0=">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container" bis_skin_checked="1">
+        <a class="navbar-brand" href="#">ITE The blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" bis_skin_checked="1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">The blog                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container" bis_skin_checked="1">
+
+    <div class="row" bis_skin_checked="1">
+                    <div class="col-md-8" bis_skin_checked="1">
+                <h1 class="my-4">Recent Articles</h1>
+                <p><b>People always want to know their future. For a long time, the time between Christmas and Epiphany was used for fortune telling. Want to know how it was?</b></p><p></p><p>Since ancient times, people have been engaged in fortune telling, although the church does not welcome such a pastime. But I really want to know the future! Days from January 7th to January 19th are considered particularly suitable for fortune telling. Someone takes this ritual seriously, and someone as entertainment.</p><p>Do not think that fortunetellers are only in Russia. In Bulgaria, England, the Czech Republic, Greece, young people are not averse to using fortune-telling to learn something about their fate.</p><p>Some fortunetelling is somewhat similar, only slightly different in some details.</p><p><strong class="bb"></strong></p><p><strong class="bb">Fortune telling with firewood</strong></p><p>In the old days, English girls, having waited for darkness, went out to the woodpile of firewood, took an armful of firewood (as much as they could take), brought them into the house. In the morning, with awe, they counted the firewood brought into the house. An even number promised happiness - that means the girl will definitely marry in the coming year, if it is odd - wait another year for the groom, the wedding was not expected.</p><p>In Russia, everything happened much more lively. Nobody bothered until morning. All that was needed was to go to the wooden fence, spread your arms to cover more boards, then carefully count them. Then everything is like in England: an even number of boards - for the wedding, odd - your fiancé has not found you yet!</p><p>This type of fortune-telling will soon come to naught: there are fewer furnaces and metal fences!</p><p><strong class="bb">Magic apple</strong></p><p>I can’t compare Czech fortune-telling with an apple with any Russian. Czech girls and boys choose an appetizing beautiful apple, at the right time treat their chosen one with an apple. From this moment the most interesting begins: it all depends on how the chosen one reacts to the treat. If with an appetite “shreds” an apple to a stub - there are reciprocal feelings, and if it gnaws an apple with a center - be at the wedding! But if the chosen one does not finish eating the apple or suddenly it comes to his mind to give the apple to another - there is no hope for reciprocal feelings, not even the smallest one. This action unconditionally means: there is no love and never will be, look for another!</p><p><strong class="bb"></strong></p><p><strong class="bb">Fortune telling on a book</strong></p><p>In Bulgaria, fortune telling on a book is common. In Russia, by the way, this method of fortune telling is also often used.</p><p>In this case, a fortuneteller after making a wish will guess the page number in the book, paragraph and line. Then everything depends on what is written in the hidden line and how the fortuneteller will interpret what has been read!</p><p><strong class="bb"></strong></p><p><strong class="bb">Christmas dreams</strong></p><p>Many variations of fortune-telling are associated with sleep. The essence of fortune-telling is that before going to bed, the girl thinks to see the matrimonial-mum in a dream, after which, without talking to anyone, she goes to bed, and in the morning recalls what she saw in a dream.</p><p>There are many options for this divination. Some advise girls to comb their hair with a comb before going to bed, put a comb under their pillow and say softly: "Narrow-dressed, with whom to age for a century, come to comb at night", "Narrow-dressed, come to me in a dream, comb my hair" .</p><p>An important condition for this fortune-telling: the comb must be new, preferably wooden.</p><p>Sometimes a comb in fortune-telling served as a bridge. It was proposed to put a comb through the hair, then put it on a glass of water, put the structure under the bed and say before bedtime: "Narrowed-faced, who should I come with, come to me, take me across the bridge."</p><p><strong class="bb"></strong></p><p><strong class="bb">Fate depends on the rooster</strong></p><p>For fortune-telling, they even attracted a rooster and a chicken! First, they prepared a “bridgehead”: put plates on the floor - one plate with grain, another with water, put a mirror next to the plates, let the chicken out, and then brought the rooster into the premises. The fate of the girl depended on the actions of the cock! If the rooster immediately approached the mirror, it means the narrowed one will be beautiful, if it’s rich to the plate with grain, but if it’s a drunkard to the plate with water, if the rooster ignored all objects, and immediately went to the chicken - a womanizer!</p><p><strong class="bb">Predictive Shadows</strong></p><p>Fortune telling is common even among modern youth. But as with fortune-telling with a book, everyone interprets what he sees in his own way. The crumpled clean paper sheet is put on a dish, set on fire, the lights in the room are turned off. When the sheet is almost burned out, using a candle make it display on the wall. The shadows on the wall are trying to find out the future.</p><p>If you put together a story about a successful fortune-telling, you can publish a book!</p><p><strong class="bb"></strong></p><p><strong class="bb">Fortune telling with a mirror</strong></p><p>The most exciting, mysterious fortune-telling is considered fortune-telling with a mirror and candles.</p><p>This method of divination is shrouded in a network of blood-cooling stories. They say that sometimes girls instead of a narrowed one saw something terrible in the mirror, and often lost consciousness out of fear.</p><p>They even came up with a way to mitigate the effects of fortune telling - a glass carafe with water. It was allowed to look in the mirror only through a decanter filled with water.</p><p>There were two more rules for the correct conduct of the ritual:</p><p>1. During fortune telling, it was not allowed to blink.</p><p>2. As soon as the fortune-telling ended, they should put the mirror on the table down with the mirrored side or at least cover it with a scarf.</p><p>Fortuneteller recommended at midnight or noon. This time of day is most suitable for the concept of transition, a kind of border.</p><p>It was also important to choose the right place for divination. Usually for these purposes they went to the bathhouse, barn or climbed onto the stove.</p><p><strong class="bb"></strong></p><p><strong class="bb">Wish fulfillment ritual</strong></p><p>In addition to fortune telling, a ritual was carried out to fulfill wishes. At midnight, they wrote a cherished dream on a piece of paper, put the piece of text down on a plate and set it on fire on one side. If the leaf burned out completely - the dream will come true, if only part of the leaf burned - something will hinder the fulfillment of the plan.            </p></div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4" bis_skin_checked="1">
+
+            <!-- Search Widget -->
+            <div class="card my-4" bis_skin_checked="1">
+                <h5 class="card-header">Search</h5>
+                <div class="card-body" bis_skin_checked="1">
+                    <div class="input-group" bis_skin_checked="1">
+                        <input type="text" class="form-control" placeholder="I want to find...">
+                        <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">To find!</button>
+              </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="card my-4" bis_skin_checked="1">
+                <h5 class="card-header">Recent Articles</h5>
+                <div class="card-body" bis_skin_checked="1">
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-lg-12" bis_skin_checked="1">
+                            <ul class="list-unstyled mb-0">
+                                                                                                                                        <li><a href="#">Fortune telling. As fortunetellers in Russia</a></li>
+                                                                                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container" bis_skin_checked="1">
+        <p class="m-0 text-center text-white">Copyright © ITE The blog 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="./index_files/jquery.min.js.download"></script>
+<script src="./index_files/bootstrap.min.js.download"></script>
+
+<!-- Facebook сф6 Pixel Code -->
+
+
+
+</body></html>
